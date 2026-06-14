@@ -1,0 +1,4 @@
+Status: 401
+Status Text: Unauthorized
+{"message":"User login required","status":401}
+{ message: 'User login required', status: 401 }

@@ -1,0 +1,2 @@
+Base URL: https://parabank.parasoft.com/parabank
+Created User: user_1781364136318

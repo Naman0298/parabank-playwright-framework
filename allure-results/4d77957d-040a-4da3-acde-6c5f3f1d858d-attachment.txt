@@ -1,0 +1,12 @@
+{
+  firstName: 'Julio',
+  lastName: 'Miller',
+  address: '497 Otho Skyway',
+  city: 'Oranhaven',
+  state: 'New Hampshire',
+  zipCode: '42540-6932',
+  phone: '(695) 625-3458 x41795',
+  ssn: '533852975',
+  username: 'user_1781365284094',
+  password: 'Test@12345'
+}

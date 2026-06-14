@@ -1,0 +1,7 @@
+Total Scenarios: 35
+Total Test Cases: 45
+UI Tests: 5
+API Tests: 1+
+Hybrid Tests: 2+
+Page Objects: 5
+Utilities: 2

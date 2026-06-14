@@ -1,0 +1,3 @@
+Created Account: 26331
+API Status: 200
+{ id: 26331, customerId: 19094, type: 'SAVINGS', balance: 100 }

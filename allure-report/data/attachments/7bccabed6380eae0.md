@@ -1,0 +1,250 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: E2E\loanRequestJourney.spec.ts >> Validate Loan Request Journey
+- Location: tests\E2E\loanRequestJourney.spec.ts:7:5
+
+# Error details
+
+```
+Test timeout of 60000ms exceeded.
+```
+
+```
+Error: locator.click: Test timeout of 60000ms exceeded.
+Call log:
+  - waiting for getByRole('link', { name: 'Request Loan' })
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - link:
+        - /url: admin.htm
+        - img [ref=e4] [cursor=pointer]
+      - link "ParaBank":
+        - /url: index.htm
+        - img "ParaBank" [ref=e5] [cursor=pointer]
+      - paragraph [ref=e6]: Experience the difference
+    - generic [ref=e7]:
+      - list [ref=e8]:
+        - listitem [ref=e9]: Solutions
+        - listitem [ref=e10]:
+          - link "About Us" [ref=e11] [cursor=pointer]:
+            - /url: about.htm
+        - listitem [ref=e12]:
+          - link "Services" [ref=e13] [cursor=pointer]:
+            - /url: services.htm
+        - listitem [ref=e14]:
+          - link "Products" [ref=e15] [cursor=pointer]:
+            - /url: http://www.parasoft.com/jsp/products.jsp
+        - listitem [ref=e16]:
+          - link "Locations" [ref=e17] [cursor=pointer]:
+            - /url: http://www.parasoft.com/jsp/pr/contacts.jsp
+        - listitem [ref=e18]:
+          - link "Admin Page" [ref=e19] [cursor=pointer]:
+            - /url: admin.htm
+      - list [ref=e20]:
+        - listitem [ref=e21]:
+          - link "home" [ref=e22] [cursor=pointer]:
+            - /url: index.htm
+        - listitem [ref=e23]:
+          - link "about" [ref=e24] [cursor=pointer]:
+            - /url: about.htm
+        - listitem [ref=e25]:
+          - link "contact" [ref=e26] [cursor=pointer]:
+            - /url: contact.htm
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - heading "Customer Login" [level=2] [ref=e29]
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - paragraph [ref=e32]: Username
+            - textbox [active] [ref=e34]
+            - paragraph [ref=e35]: Password
+            - textbox [ref=e37]
+            - button "Log In" [ref=e39] [cursor=pointer]
+          - paragraph [ref=e40]:
+            - link "Forgot login info?" [ref=e41] [cursor=pointer]:
+              - /url: lookup.htm
+          - paragraph [ref=e42]:
+            - link "Register" [ref=e43] [cursor=pointer]:
+              - /url: register.htm
+      - generic [ref=e44]:
+        - heading "Signing up is easy!" [level=1] [ref=e45]
+        - paragraph [ref=e46]: If you have an account with us you can sign-up for free instant online access. You will have to provide some personal information.
+        - table [ref=e48]:
+          - rowgroup [ref=e49]:
+            - 'row "First Name: Birdie" [ref=e50]':
+              - cell "First Name:" [ref=e51]
+              - cell "Birdie" [ref=e52]:
+                - textbox [ref=e53]: Birdie
+              - cell [ref=e54]
+            - 'row "Last Name: Pacocha" [ref=e55]':
+              - cell "Last Name:" [ref=e56]
+              - cell "Pacocha" [ref=e57]:
+                - textbox [ref=e58]: Pacocha
+              - cell [ref=e59]
+            - 'row "Address: 18938 Sipes Lock" [ref=e60]':
+              - cell "Address:" [ref=e61]
+              - cell "18938 Sipes Lock" [ref=e62]:
+                - textbox [ref=e63]: 18938 Sipes Lock
+              - cell [ref=e64]
+            - 'row "City: West Kevin" [ref=e65]':
+              - cell "City:" [ref=e66]
+              - cell "West Kevin" [ref=e67]:
+                - textbox [ref=e68]: West Kevin
+              - cell [ref=e69]
+            - 'row "State: Louisiana" [ref=e70]':
+              - cell "State:" [ref=e71]
+              - cell "Louisiana" [ref=e72]:
+                - textbox [ref=e73]: Louisiana
+              - cell [ref=e74]
+            - 'row "Zip Code: 14999" [ref=e75]':
+              - cell "Zip Code:" [ref=e76]
+              - cell "14999" [ref=e77]:
+                - textbox [ref=e78]: "14999"
+              - cell [ref=e79]
+            - 'row "Phone #: 1-342-825-9231 x41140" [ref=e80]':
+              - 'cell "Phone #:" [ref=e81]'
+              - cell "1-342-825-9231 x41140" [ref=e82]:
+                - textbox [ref=e83]: 1-342-825-9231 x41140
+              - cell [ref=e84]
+            - 'row "SSN: 880182341" [ref=e85]':
+              - cell "SSN:" [ref=e86]
+              - cell "880182341" [ref=e87]:
+                - textbox [ref=e88]: "880182341"
+              - cell [ref=e89]
+            - row [ref=e90]:
+              - cell [ref=e91]
+            - 'row "Username: user_1781418633262 This username already exists." [ref=e92]':
+              - cell "Username:" [ref=e93]
+              - cell "user_1781418633262" [ref=e94]:
+                - textbox [ref=e95]: user_1781418633262
+              - cell "This username already exists." [ref=e96]
+            - row "Password:" [ref=e97]:
+              - cell "Password:" [ref=e98]
+              - cell [ref=e99]:
+                - textbox [ref=e100]
+              - cell [ref=e101]
+            - row "Confirm:" [ref=e102]:
+              - cell "Confirm:" [ref=e103]
+              - cell [ref=e104]:
+                - textbox [ref=e105]
+              - cell [ref=e106]
+            - row "Register" [ref=e107]:
+              - cell [ref=e108]
+              - cell "Register" [ref=e109]:
+                - button "Register" [ref=e110] [cursor=pointer]
+  - generic [ref=e112]:
+    - list [ref=e113]:
+      - listitem [ref=e114]:
+        - link "Home" [ref=e115] [cursor=pointer]:
+          - /url: index.htm
+        - text: "|"
+      - listitem [ref=e116]:
+        - link "About Us" [ref=e117] [cursor=pointer]:
+          - /url: about.htm
+        - text: "|"
+      - listitem [ref=e118]:
+        - link "Services" [ref=e119] [cursor=pointer]:
+          - /url: services.htm
+        - text: "|"
+      - listitem [ref=e120]:
+        - link "Products" [ref=e121] [cursor=pointer]:
+          - /url: http://www.parasoft.com/jsp/products.jsp
+        - text: "|"
+      - listitem [ref=e122]:
+        - link "Locations" [ref=e123] [cursor=pointer]:
+          - /url: http://www.parasoft.com/jsp/pr/contacts.jsp
+        - text: "|"
+      - listitem [ref=e124]:
+        - link "Forum" [ref=e125] [cursor=pointer]:
+          - /url: http://forums.parasoft.com/
+        - text: "|"
+      - listitem [ref=e126]:
+        - link "Site Map" [ref=e127] [cursor=pointer]:
+          - /url: sitemap.htm
+        - text: "|"
+      - listitem [ref=e128]:
+        - link "Contact Us" [ref=e129] [cursor=pointer]:
+          - /url: contact.htm
+    - paragraph [ref=e130]: © Parasoft. All rights reserved.
+    - list [ref=e131]:
+      - listitem [ref=e132]: "Visit us at:"
+      - listitem [ref=e133]:
+        - link "www.parasoft.com" [ref=e134] [cursor=pointer]:
+          - /url: http://www.parasoft.com/
+```
+
+# Test source
+
+```ts
+  1  | import { Page, Locator } from '@playwright/test';
+  2  | 
+  3  | export class LoanRequestPage {
+  4  | 
+  5  |     readonly page: Page;
+  6  | 
+  7  |     readonly requestLoanLink: Locator;
+  8  | 
+  9  |     readonly loanAmountInput: Locator;
+  10 |     readonly downPaymentInput: Locator;
+  11 |     readonly fromAccountDropdown: Locator;
+  12 | 
+  13 |     readonly applyButton: Locator;
+  14 | 
+  15 |     readonly approvalMessage: Locator;
+  16 |     readonly loanAccountId: Locator;
+  17 | 
+  18 |     constructor(page: Page) {
+  19 | 
+  20 |         this.page = page;
+  21 | 
+  22 |         this.requestLoanLink = page.getByRole('link', { name: 'Request Loan' });
+  23 | 
+  24 |         this.loanAmountInput = page.locator('#amount');
+  25 | 
+  26 |         this.downPaymentInput = page.locator('#downPayment');
+  27 | 
+  28 |         this.fromAccountDropdown = page.locator('#fromAccountId');
+  29 | 
+  30 |         this.applyButton = page.locator('input[value="Apply Now"]');
+  31 | 
+  32 |         this.approvalMessage = page.locator('#loanRequestApproved');
+  33 | 
+  34 |         this.loanAccountId = page.locator('#newAccountId');
+  35 |     }
+  36 | 
+  37 |     async navigate() {
+  38 | 
+> 39 |         await this.requestLoanLink.click();
+     |                                    ^ Error: locator.click: Test timeout of 60000ms exceeded.
+  40 |     }
+  41 | 
+  42 |     async requestLoan(amount: string, downPayment: string) {
+  43 | 
+  44 |         await this.loanAmountInput.fill(amount);
+  45 | 
+  46 |         await this.downPaymentInput.fill(downPayment);
+  47 | 
+  48 |         await this.applyButton.click();
+  49 | 
+  50 |         await this.approvalMessage.waitFor({ state: 'visible' });
+  51 |     }
+  52 | 
+  53 |     async getLoanAccountId() {
+  54 | 
+  55 |         return await this.loanAccountId.textContent();
+  56 |     }
+  57 | }
+```

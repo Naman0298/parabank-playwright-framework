@@ -1,0 +1,258 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: UI\transferFunds.spec.ts >> Transfer Funds Between Accounts
+- Location: tests\UI\transferFunds.spec.ts:5:5
+
+# Error details
+
+```
+TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+Call log:
+  - waiting for getByRole('link', { name: 'Open New Account' }) to be visible
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - link:
+        - /url: admin.htm
+        - img [ref=e4] [cursor=pointer]
+      - link "ParaBank":
+        - /url: index.htm
+        - img "ParaBank" [ref=e5] [cursor=pointer]
+      - paragraph [ref=e6]: Experience the difference
+    - generic [ref=e7]:
+      - list [ref=e8]:
+        - listitem [ref=e9]: Solutions
+        - listitem [ref=e10]:
+          - link "About Us" [ref=e11] [cursor=pointer]:
+            - /url: about.htm
+        - listitem [ref=e12]:
+          - link "Services" [ref=e13] [cursor=pointer]:
+            - /url: services.htm
+        - listitem [ref=e14]:
+          - link "Products" [ref=e15] [cursor=pointer]:
+            - /url: http://www.parasoft.com/jsp/products.jsp
+        - listitem [ref=e16]:
+          - link "Locations" [ref=e17] [cursor=pointer]:
+            - /url: http://www.parasoft.com/jsp/pr/contacts.jsp
+        - listitem [ref=e18]:
+          - link "Admin Page" [ref=e19] [cursor=pointer]:
+            - /url: admin.htm
+      - list [ref=e20]:
+        - listitem [ref=e21]:
+          - link "home" [ref=e22] [cursor=pointer]:
+            - /url: index.htm
+        - listitem [ref=e23]:
+          - link "about" [ref=e24] [cursor=pointer]:
+            - /url: about.htm
+        - listitem [ref=e25]:
+          - link "contact" [ref=e26] [cursor=pointer]:
+            - /url: contact.htm
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - heading "Customer Login" [level=2] [ref=e29]
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - paragraph [ref=e32]: Username
+            - textbox [active] [ref=e34]
+            - paragraph [ref=e35]: Password
+            - textbox [ref=e37]
+            - button "Log In" [ref=e39] [cursor=pointer]
+          - paragraph [ref=e40]:
+            - link "Forgot login info?" [ref=e41] [cursor=pointer]:
+              - /url: lookup.htm
+          - paragraph [ref=e42]:
+            - link "Register" [ref=e43] [cursor=pointer]:
+              - /url: register.htm
+      - generic [ref=e44]:
+        - heading "Signing up is easy!" [level=1] [ref=e45]
+        - paragraph [ref=e46]: If you have an account with us you can sign-up for free instant online access. You will have to provide some personal information.
+        - table [ref=e48]:
+          - rowgroup [ref=e49]:
+            - 'row "First Name: Tomas" [ref=e50]':
+              - cell "First Name:" [ref=e51]
+              - cell "Tomas" [ref=e52]:
+                - textbox [ref=e53]: Tomas
+              - cell [ref=e54]
+            - 'row "Last Name: Cruickshank" [ref=e55]':
+              - cell "Last Name:" [ref=e56]
+              - cell "Cruickshank" [ref=e57]:
+                - textbox [ref=e58]: Cruickshank
+              - cell [ref=e59]
+            - 'row "Address: 896 Okuneva Fall" [ref=e60]':
+              - cell "Address:" [ref=e61]
+              - cell "896 Okuneva Fall" [ref=e62]:
+                - textbox [ref=e63]: 896 Okuneva Fall
+              - cell [ref=e64]
+            - 'row "City: West Alycia" [ref=e65]':
+              - cell "City:" [ref=e66]
+              - cell "West Alycia" [ref=e67]:
+                - textbox [ref=e68]: West Alycia
+              - cell [ref=e69]
+            - 'row "State: Louisiana" [ref=e70]':
+              - cell "State:" [ref=e71]
+              - cell "Louisiana" [ref=e72]:
+                - textbox [ref=e73]: Louisiana
+              - cell [ref=e74]
+            - 'row "Zip Code: 31783-3948" [ref=e75]':
+              - cell "Zip Code:" [ref=e76]
+              - cell "31783-3948" [ref=e77]:
+                - textbox [ref=e78]: 31783-3948
+              - cell [ref=e79]
+            - 'row "Phone #: 1-458-497-3036 x25109" [ref=e80]':
+              - 'cell "Phone #:" [ref=e81]'
+              - cell "1-458-497-3036 x25109" [ref=e82]:
+                - textbox [ref=e83]: 1-458-497-3036 x25109
+              - cell [ref=e84]
+            - 'row "SSN: 364154512" [ref=e85]':
+              - cell "SSN:" [ref=e86]
+              - cell "364154512" [ref=e87]:
+                - textbox [ref=e88]: "364154512"
+              - cell [ref=e89]
+            - row [ref=e90]:
+              - cell [ref=e91]
+            - 'row "Username: user_1781418994282 This username already exists." [ref=e92]':
+              - cell "Username:" [ref=e93]
+              - cell "user_1781418994282" [ref=e94]:
+                - textbox [ref=e95]: user_1781418994282
+              - cell "This username already exists." [ref=e96]
+            - row "Password:" [ref=e97]:
+              - cell "Password:" [ref=e98]
+              - cell [ref=e99]:
+                - textbox [ref=e100]
+              - cell [ref=e101]
+            - row "Confirm:" [ref=e102]:
+              - cell "Confirm:" [ref=e103]
+              - cell [ref=e104]:
+                - textbox [ref=e105]
+              - cell [ref=e106]
+            - row "Register" [ref=e107]:
+              - cell [ref=e108]
+              - cell "Register" [ref=e109]:
+                - button "Register" [ref=e110] [cursor=pointer]
+  - generic [ref=e112]:
+    - list [ref=e113]:
+      - listitem [ref=e114]:
+        - link "Home" [ref=e115] [cursor=pointer]:
+          - /url: index.htm
+        - text: "|"
+      - listitem [ref=e116]:
+        - link "About Us" [ref=e117] [cursor=pointer]:
+          - /url: about.htm
+        - text: "|"
+      - listitem [ref=e118]:
+        - link "Services" [ref=e119] [cursor=pointer]:
+          - /url: services.htm
+        - text: "|"
+      - listitem [ref=e120]:
+        - link "Products" [ref=e121] [cursor=pointer]:
+          - /url: http://www.parasoft.com/jsp/products.jsp
+        - text: "|"
+      - listitem [ref=e122]:
+        - link "Locations" [ref=e123] [cursor=pointer]:
+          - /url: http://www.parasoft.com/jsp/pr/contacts.jsp
+        - text: "|"
+      - listitem [ref=e124]:
+        - link "Forum" [ref=e125] [cursor=pointer]:
+          - /url: http://forums.parasoft.com/
+        - text: "|"
+      - listitem [ref=e126]:
+        - link "Site Map" [ref=e127] [cursor=pointer]:
+          - /url: sitemap.htm
+        - text: "|"
+      - listitem [ref=e128]:
+        - link "Contact Us" [ref=e129] [cursor=pointer]:
+          - /url: contact.htm
+    - paragraph [ref=e130]: © Parasoft. All rights reserved.
+    - list [ref=e131]:
+      - listitem [ref=e132]: "Visit us at:"
+      - listitem [ref=e133]:
+        - link "www.parasoft.com" [ref=e134] [cursor=pointer]:
+          - /url: http://www.parasoft.com/
+```
+
+# Test source
+
+```ts
+  1  | import { Page, Locator, expect } from '@playwright/test';
+  2  | 
+  3  | export class OpenAccountPage {
+  4  |     readonly page: Page;
+  5  | 
+  6  |     readonly openAccountLink: Locator;
+  7  |     readonly accountTypeDropdown: Locator;
+  8  |     readonly fromAccountDropdown: Locator;
+  9  |     readonly openNewAccountButton: Locator;
+  10 | 
+  11 |     readonly successMessage: Locator;
+  12 |     readonly accountIdLink: Locator;
+  13 | 
+  14 |     constructor(page: Page) {
+  15 |         this.page = page;
+  16 | 
+  17 |         this.openAccountLink = page.getByRole('link', { name: 'Open New Account' });
+  18 | 
+  19 |         this.accountTypeDropdown = page.locator('#type');
+  20 |         this.fromAccountDropdown = page.locator('#fromAccountId');
+  21 | 
+  22 |         this.openNewAccountButton = page.locator('input[value="Open New Account"]');
+  23 | 
+  24 |         this.successMessage = page.locator('#openAccountResult h1');
+  25 |         this.accountIdLink = page.locator('#newAccountId');
+  26 |     }
+  27 | 
+  28 |     async navigate() {
+  29 | 
+> 30 |         await this.openAccountLink.waitFor({ state: 'visible', timeout: 15000 });
+     |                                    ^ TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+  31 | 
+  32 |         await this.openAccountLink.click();
+  33 | 
+  34 |         await this.accountTypeDropdown.waitFor({ state: 'visible' });
+  35 |     }
+  36 | 
+  37 |     async createSavingsAccount() {
+  38 |         await this.accountTypeDropdown.selectOption('1');
+  39 | 
+  40 |         await this.page.waitForTimeout(2000);
+  41 | 
+  42 |         await this.openNewAccountButton.click();
+  43 |         await Promise.race([
+  44 |             this.page.locator('#openAccountResult').waitFor({ state: 'visible', timeout: 15000 }),
+  45 |             this.page.locator('#openAccountError').waitFor({ state: 'visible', timeout: 15000 })
+  46 |         ]);
+  47 |         if (await this.page.locator('#openAccountError').isVisible()) {
+  48 |             throw new Error('Open Account failed - ParaBank returned an error');
+  49 |         }
+  50 |     }
+  51 | 
+  52 |     async createCheckingAccount() {
+  53 |         await expect(this.openNewAccountButton).toBeVisible();
+  54 | 
+  55 |         await this.accountTypeDropdown.selectOption('0');
+  56 | 
+  57 |         await this.openNewAccountButton.click();
+  58 | 
+  59 |         await this.page.waitForLoadState('networkidle');
+  60 | 
+  61 |         await this.page.locator('#openAccountResult').waitFor({ state: 'visible', timeout: 15000 });
+  62 |     }
+  63 | 
+  64 |     async getCreatedAccountId() {
+  65 |         const accountId = await this.accountIdLink.textContent();
+  66 | 
+  67 |         return accountId?.trim();
+  68 |     }
+  69 | }
+```

@@ -1,0 +1,12 @@
+{
+  firstName: 'Tianna',
+  lastName: 'Bergnaum',
+  address: '644 Hoyt Rapids',
+  city: 'East Luciaboro',
+  state: 'Virginia',
+  zipCode: '90772',
+  phone: '441.602.2616 x664',
+  ssn: '931918610',
+  username: 'user_1781364644010',
+  password: 'Test@12345'
+}

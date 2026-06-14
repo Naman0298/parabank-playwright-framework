@@ -1,0 +1,12 @@
+{
+  firstName: 'Rhonda',
+  lastName: 'Crooks',
+  address: '77838 Vada Lane',
+  city: 'Inezburgh',
+  state: 'Nevada',
+  zipCode: '93291',
+  phone: '1-549-478-0421 x273',
+  ssn: '936996726',
+  username: 'user_1781365024919',
+  password: 'Test@12345'
+}

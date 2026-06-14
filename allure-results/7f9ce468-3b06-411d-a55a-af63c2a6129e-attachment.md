@@ -1,0 +1,60 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: API\customerAccounts.spec.ts >> Get Customer Accounts
+- Location: tests\API\customerAccounts.spec.ts:7:5
+
+# Error details
+
+```
+Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 401
+```
+
+# Page snapshot
+
+```yaml
+- main [ref=e2]
+```
+
+# Test source
+
+```ts
+  1  | import { test, expect } from '../../fixtures/userFixture';
+  2  | 
+  3  | import { env } from '../../config/env';
+  4  | 
+  5  | import { getAuthenticatedApiContext } from '../../utils/apiHelper';
+  6  | 
+  7  | test('Get Customer Accounts', async ({ page, registerPage, user }) => {
+  8  | 
+  9  |     await page.goto(env.baseUrl, { waitUntil: 'domcontentloaded' });
+  10 | 
+  11 |     await registerPage.navigateToRegister();
+  12 | 
+  13 |     await registerPage.registerUser(user);
+  14 | 
+  15 |     const apiContext = await getAuthenticatedApiContext(page);
+  16 | 
+  17 |     const response = await apiContext.get('https://parabank.parasoft.com/parabank/services_proxy/bank/customers/12212/accounts');
+  18 | 
+> 19 |     expect(response.status()).toBe(200);
+     |                               ^ Error: expect(received).toBe(expected) // Object.is equality
+  20 | 
+  21 |     const accounts = await response.json();
+  22 | 
+  23 |     expect(Array.isArray(accounts)).toBeTruthy();
+  24 | 
+  25 |     expect(accounts.length).toBeGreaterThan(0);
+  26 | 
+  27 |     console.log('Accounts Found:', accounts.length);
+  28 | }
+  29 | );
+```

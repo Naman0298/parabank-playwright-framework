@@ -1,0 +1,12 @@
+{
+  firstName: 'Melisa',
+  lastName: 'Lind',
+  address: "211 O'Conner Stream",
+  city: 'Olympia',
+  state: 'Mississippi',
+  zipCode: '61699',
+  phone: '966.669.0650',
+  ssn: '790913169',
+  username: 'user_1781366379365',
+  password: 'Test@12345'
+}

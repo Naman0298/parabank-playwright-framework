@@ -1,0 +1,12 @@
+{
+  firstName: 'Barbara',
+  lastName: 'Connelly',
+  address: '60471 W 8th Street',
+  city: 'Maricopa',
+  state: 'Florida',
+  zipCode: '84992-0135',
+  phone: '771-951-8899 x426',
+  ssn: '530758518',
+  username: 'user_1781364681048',
+  password: 'Test@12345'
+}

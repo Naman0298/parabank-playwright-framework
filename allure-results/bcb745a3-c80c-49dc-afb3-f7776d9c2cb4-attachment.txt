@@ -1,0 +1,12 @@
+{
+  firstName: 'Caroline',
+  lastName: 'Jacobs',
+  address: '25585 Stehr Way',
+  city: 'Sidneyton',
+  state: 'Wyoming',
+  zipCode: '27540-8577',
+  phone: '(366) 528-2307 x663',
+  ssn: '296175359',
+  username: 'user_1781365054491',
+  password: 'Test@12345'
+}

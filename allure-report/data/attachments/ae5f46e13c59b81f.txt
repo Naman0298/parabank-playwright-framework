@@ -1,0 +1,13 @@
+Current URL: https://parabank.parasoft.com/parabank/register.htm
+[
+  {
+    name: 'JSESSIONID',
+    value: 'F680D5984D773F5A4FCA7329CC8516EE',
+    domain: 'parabank.parasoft.com',
+    path: '/parabank',
+    expires: -1,
+    httpOnly: true,
+    secure: false,
+    sameSite: 'Lax'
+  }
+]

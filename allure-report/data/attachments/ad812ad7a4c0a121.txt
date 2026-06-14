@@ -1,0 +1,12 @@
+{
+  firstName: 'Chance',
+  lastName: 'Klocko',
+  address: '9368 Gene Spring',
+  city: 'Jersey City',
+  state: 'Massachusetts',
+  zipCode: '98824',
+  phone: '666-445-3827',
+  ssn: '274812552',
+  username: 'user_1781365056466',
+  password: 'Test@12345'
+}
