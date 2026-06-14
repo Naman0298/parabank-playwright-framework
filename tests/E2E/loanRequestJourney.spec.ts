@@ -1,8 +1,6 @@
 import { test, expect } from '../../fixtures/userFixture';
-
 import { env } from '../../config/env';
 import { registerAndAuthenticate } from '../../utils/authHelper';
-
 import { getAuthenticatedApiContext } from '../../utils/apiHelper';
 
 test('Validate Loan Request Journey', async ({ page, registerPage, accountOverviewPage, loanRequestPage, user }) => {

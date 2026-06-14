@@ -2,8 +2,8 @@ import { Page, Locator } from '@playwright/test';
 import { env } from '../config/env';
 
 export class RegisterPage {
-    readonly page: Page;
 
+    readonly page: Page;
     readonly registerLink: Locator;
     readonly firstName: Locator;
     readonly lastName: Locator;
@@ -19,10 +19,9 @@ export class RegisterPage {
     readonly registerButton: Locator;
 
     constructor(page: Page) {
+
         this.page = page;
-
         this.registerLink = page.getByRole('link', { name: 'Register' });
-
         this.firstName = page.locator('#customer\\.firstName');
         this.lastName = page.locator('#customer\\.lastName');
         this.address = page.locator('#customer\\.address\\.street');
@@ -31,15 +30,14 @@ export class RegisterPage {
         this.zipCode = page.locator('#customer\\.address\\.zipCode');
         this.phone = page.locator('#customer\\.phoneNumber');
         this.ssn = page.locator('#customer\\.ssn');
-
         this.username = page.locator('#customer\\.username');
         this.password = page.locator('#customer\\.password');
         this.confirmPassword = page.locator('#repeatedPassword');
-
         this.registerButton = page.locator('input[value="Register"]');
     }
 
     async navigateToRegister() {
+
         await this.registerLink.click();
         await this.firstName.waitFor({ state: 'visible', timeout: 15000 });
     }

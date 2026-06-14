@@ -1,0 +1,5 @@
+Registration Attempt 1/3
+User authenticated successfully.
+Created Account: 17784
+API Status: 200
+{ id: 17784, customerId: 15320, type: 'SAVINGS', balance: 100 }

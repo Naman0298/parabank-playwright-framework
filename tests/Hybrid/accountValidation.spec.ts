@@ -1,6 +1,5 @@
 import { test, expect } from '../../fixtures/userFixture';
 import { registerAndAuthenticate } from '../../utils/authHelper';
-
 import { env } from '../../config/env';
 import { getAuthenticatedApiContext } from '../../utils/apiHelper';
 

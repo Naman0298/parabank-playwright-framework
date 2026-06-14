@@ -1,0 +1,2 @@
+{ id: 18228, customerId: 14987, type: 'CHECKING', balance: 515.5 }
+Transfer completed successfully

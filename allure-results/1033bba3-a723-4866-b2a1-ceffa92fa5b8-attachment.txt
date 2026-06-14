@@ -1,0 +1,5 @@
+Registration Attempt 1/3
+User authenticated successfully.
+Account ID: 17007
+Status: 200
+{ id: 17007, customerId: 14765, type: 'SAVINGS', balance: 100 }

@@ -11,7 +11,5 @@ test('Transfer With Invalid Amount', async ({ page, registerPage, transferFundsP
     await transferFundsPage.transferButton.click();
     await page.waitForTimeout(2000);
 
-    const successExists = await page.locator('text=has been transferred').count();
-    console.log('Success Message Count:', successExists);
 }
 );

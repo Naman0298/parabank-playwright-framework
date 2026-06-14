@@ -1,0 +1,2 @@
+Status: 400
+Response: {"type":"about:blank","title":"Bad Request","status":400,"detail":"Failed to convert 'id' with value: 'abc123'","instance":"/parabank/services_proxy/bank/accounts/abc123"}

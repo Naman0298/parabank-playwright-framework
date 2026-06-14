@@ -1,0 +1,11 @@
+Registration Attempt 1/3
+Authentication check failed.
+Current URL: https://parabank.parasoft.com/parabank/register.htm
+Registration attempt 1 failed.
+Current URL: https://parabank.parasoft.com/parabank/register.htm
+Registration Attempt 2/3
+Authentication check failed.
+Current URL: https://parabank.parasoft.com/parabank/register.htm
+Registration attempt 2 failed.
+Current URL: https://parabank.parasoft.com/parabank/register.htm
+Registration Attempt 3/3
