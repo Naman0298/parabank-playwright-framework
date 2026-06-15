@@ -1,2 +1,0 @@
-UI Account ID: 21891
-{ id: 21891, customerId: 17096, type: 'CHECKING', balance: 515.5 }

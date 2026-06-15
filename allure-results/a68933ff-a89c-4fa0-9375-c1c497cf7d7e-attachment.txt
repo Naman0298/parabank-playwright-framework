@@ -1,2 +1,0 @@
-Registration Attempt 1/3
-User authenticated successfully.

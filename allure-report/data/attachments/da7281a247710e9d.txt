@@ -1,1 +1,0 @@
-Response Time: 385 ms

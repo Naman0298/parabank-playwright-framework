@@ -1,1 +1,0 @@
-{ message: 'User login required', status: 401 }

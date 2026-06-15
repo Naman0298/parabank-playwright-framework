@@ -1,3 +1,0 @@
-Account ID: 21891
-Status: 200
-{ id: 21891, customerId: 16763, type: 'SAVINGS', balance: 100 }

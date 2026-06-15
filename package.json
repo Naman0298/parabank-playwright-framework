@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "allure:clean": "powershell Remove-Item -Recurse -Force allure-results,allure-report -ErrorAction SilentlyContinue",
+    "allure:generate": "allure generate allure-results --clean",
+    "allure:open": "allure open",
+    "allure:fresh": "powershell Remove-Item -Recurse -Force allure-results,allure-report -ErrorAction SilentlyContinue; npx playwright test; allure generate allure-results --clean; allure open"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
